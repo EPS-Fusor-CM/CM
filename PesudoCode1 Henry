@@ -1,1 +1,49 @@
+import java.io.*;
+import java.util.*;
+
+public class Pesudo_code {
+	
+	//Defining Stuff
+	String [] CircleONE = { (1,2,5), (3,4,7), (3,7,53)};// w/ x,y,z vaules and a place for charge?
+	String [] CircleTWO = { (1,2,5), (3,4,7), (3,7,53)};
+	String [] Circle1outer = { (1,2,5), (3,4,7), (3,7,53)};
+	String [] Circle2outer = { (1,2,5), (3,4,7), (3,7,53)};
+	
+	randomPos = new random ; //Random Generator NEEDS TO BE A "Random seed gerator w/ time effects" 
+	int charge = 1; //needs more here
+	
+	//assigning Charges randomly to different places. on both circles
+	//inner grid
+	public void circle1inner {
+		for ( int i = 0; i < 1000; ++i){ //What 'i' is < is the number of points we want on the gragh
+			randomPos = arrayPos(CircleONE) + charge;
+		}
+	}
+	
+	public void circle2inner {
+		for ( int i = 0; i < 1000; ++i){ //should be same number as used in circle1
+			randomPos = arrayPos(CircleTWO) + charge;
+		}
+	}
+	//outer grid
+	public void circle1outer {
+		for ( int i = 0; i < 1000; ++i){ //should still be same number
+			randomPos = arrayPos(Circle2outer) + charge;
+		}
+	}
+	
+	public void circle2outer {
+		for ( int i = 0; i < 1000; ++i){
+			randomPos = arrayPos(Circle2outer) + charge;
+		}
+	}
+	//Moving and testing charges
+	// All charge will be defined in a fourth, position in each substring
+	//meaning that we need to have a function that checks if a substring
+	//in it. 
+	//
+	//inner grid
+	
+	//outer grid
+}
 
