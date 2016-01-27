@@ -1,4 +1,4 @@
-package com.danibuiza.jaxb.museum;
+package com.dmulye.shape;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import java.util.List;

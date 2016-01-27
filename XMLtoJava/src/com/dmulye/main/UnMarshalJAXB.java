@@ -1,4 +1,4 @@
-package com.danibuiza.jaxb.main;
+package com.dmulye.main;
 
 import java.io.File;
 
@@ -6,9 +6,9 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
-import com.danibuiza.jaxb.museum.Shapes;
+import com.dmulye.shape.Shapes;
 
-public class UnMarshalJAXVBCompleteExample
+public class UnMarshalJAXB
 {
     public static void main( String[] args )
     {
@@ -16,7 +16,7 @@ public class UnMarshalJAXVBCompleteExample
         try
         {
 
-            File file = new File( "museums.xml" );
+            File file = new File( "shapes.xml" );
             JAXBContext jaxbContext = JAXBContext.newInstance( Shapes.class );
 
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();

@@ -1,4 +1,4 @@
-package com.danibuiza.jaxb.museum;
+package com.dmulye.shape;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,4 +60,5 @@ public class Shapes
     }
 
 }
+
 

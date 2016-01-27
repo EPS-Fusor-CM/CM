@@ -1,5 +1,4 @@
-package com.danibuiza.jaxb.museum;
-
+package com.dmulye.shape;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -69,4 +68,5 @@ public class Point
     	return "Point: (" + getX() + ", " + getY() + ", " + getZ() + ")\n";
     }
 }
+
 
