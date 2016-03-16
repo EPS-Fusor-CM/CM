@@ -12,8 +12,8 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * @author dgutierrez-diez
  */
-@XmlType( propOrder = { "point", "radius", "type" } )
-@XmlRootElement( name = "Torus" )
+@XmlType( propOrder = { "gap", "point", "radius", "type", "charge" } )
+@XmlRootElement( name = "shape" )
 public class Shape
 {
     Float radius;
@@ -27,6 +27,17 @@ public class Shape
     public void setRadius( Float radius)
     {
         this.radius = radius;
+    }
+    
+    String charge;
+    
+    public String getCharge() {
+    	return charge;
+    }
+    
+    @XmlElement ( name = "charge" )
+    public void setCharge ( String charge ) {
+    	this.charge = charge;
     }
 
     String type;
@@ -55,10 +66,23 @@ public class Shape
         this.point = point;
     }
 
+    List<gap> gap;
+
+    public List<gap> getGap()
+    {
+        return gap;
+    }
+
+    @XmlElement( name = "gap" )
+    public void setGap( List<gap> gap )
+    {
+        this.gap = gap;
+    }
+    
     @Override
     public String toString()
     {
-        StringBuffer str = new StringBuffer( "Type: " + getType() + "\n" +  "Radius: " + getRadius() + "\n" + "Coordinates: " + getPoint()  );
+        StringBuffer str = new StringBuffer( "Charge: " + getCharge() + "\n" + "Type: " + getType() + "\n" +  "Radius: " + getRadius() + "\n" + "Coordinates: " + getPoint() + "\n" + "Gap Point: " + getGap() );
         str.append( "\n" );
 
         return str.toString();

@@ -16,8 +16,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  */
 // field name and not xml element name
 @XmlType( propOrder = { "x", "y", "z" } )
-@XmlRootElement( name = "POINT" )
-public class Point
+@XmlRootElement( name = "gap" )
+public class gap
 {
 
     Float       x;
@@ -65,16 +65,11 @@ public class Point
     @Override
     public String toString()
     {
-    	return "Point: (" + getX() + ", " + getY() + ", " + getZ() + ")\n";
+    	return "Gap Point: (" + getX() + ", " + getY() + ", " + getZ() + ")\n";
     }
     
     public float[] createArray() {
     	float[] array = {getX(), getY(), getZ()};
-    	return array;
-    }
-    
-    public float[] createCylinderArray() {
-    	float[] array = {getX(), getY()};
     	return array;
     }
 }
